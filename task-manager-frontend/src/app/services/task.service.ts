@@ -9,7 +9,7 @@ import { AuthService } from './auth.service';
 export class TaskService {
   // ⚠️ Ensure this matches your backend URL. 
   // If you changed it to plural '/api/tasks', update it here too.
-  private apiUrl = 'https://task-manager-3pkj.onrender.com/api/tasks'; 
+  private apiUrl = 'https://task-manager-3pkj.onrender.com/api/task'; 
 
   constructor(private http: HttpClient, private authService: AuthService) {}
 
