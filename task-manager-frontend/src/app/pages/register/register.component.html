@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white text-center">
+          <h4 class="mb-0">Create an Account</h4>
+        </div>
+        <div class="card-body p-4">
+          
+          <form (ngSubmit)="onSubmit()">
+            
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" name="name" [(ngModel)]="registerData.name" required placeholder="e.g. John Doe">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" name="email" [(ngModel)]="registerData.email" required placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" [(ngModel)]="registerData.password" required>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-success">Register</button>
+            </div>
+
+            <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+              {{ errorMessage }}
+            </div>
+          </form>
+
+          <p class="text-center mt-3">
+            Already have an account? <a routerLink="/login" class="text-success">Login here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

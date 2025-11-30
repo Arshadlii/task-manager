@@ -1,0 +1,6 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* You can keep your global styles below this, or delete them if they conflict */
+body {
+    background-color: #f8f9fa; /* Light grey background for the whole app */
+}
